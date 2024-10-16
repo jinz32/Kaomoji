@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		A4858DDB2C921AD10053F492 /* KaomojiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858DDA2C921AD10053F492 /* KaomojiApp.swift */; };
-		A4858DDD2C921AD10053F492 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858DDC2C921AD10053F492 /* ContentView.swift */; };
+		A4858DDD2C921AD10053F492 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858DDC2C921AD10053F492 /* EmojiView.swift */; };
 		A4858DDF2C921AD30053F492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4858DDE2C921AD30053F492 /* Assets.xcassets */; };
 		A4858DE22C921AD30053F492 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4858DE12C921AD30053F492 /* Preview Assets.xcassets */; };
 		A4858DEC2C921AD40053F492 /* KaomojiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858DEB2C921AD40053F492 /* KaomojiTests.swift */; };
 		A4858DF62C921AD40053F492 /* KaomojiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858DF52C921AD40053F492 /* KaomojiUITests.swift */; };
 		A4858DF82C921AD40053F492 /* KaomojiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858DF72C921AD40053F492 /* KaomojiUITestsLaunchTests.swift */; };
+		A4858E082C925AF20053F492 /* Kaomoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858E072C925AF20053F492 /* Kaomoji.swift */; };
+		A4858E0C2C925CD30053F492 /* JsonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858E0B2C925CD30053F492 /* JsonService.swift */; };
+		A4858E122C926B680053F492 /* EmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858E112C926B680053F492 /* EmojiViewModel.swift */; };
+		A49CD7682CBDA0CF00C238DB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49CD7672CBDA0CF00C238DB /* KeyboardViewController.swift */; };
+		A49CD76C2CBDA0CF00C238DB /* Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A49CD7652CBDA0CF00C238DB /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A49CD7702CC03AE400C238DB /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858DDC2C921AD10053F492 /* EmojiView.swift */; };
+		A49CD7712CC03AED00C238DB /* EmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858E112C926B680053F492 /* EmojiViewModel.swift */; };
+		A49CD7722CC03AF300C238DB /* JsonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858E0B2C925CD30053F492 /* JsonService.swift */; };
+		A49CD7732CC03AF900C238DB /* Kaomoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858E072C925AF20053F492 /* Kaomoji.swift */; };
+		A4CB42762C97D4C900639CCE /* Kaomoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A4CB42752C97D4C900639CCE /* Kaomoji.json */; };
+		A4CB42992CA2406200639CCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB42982CA2406200639CCE /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +42,33 @@
 			remoteGlobalIDString = A4858DD62C921AD10053F492;
 			remoteInfo = Kaomoji;
 		};
+		A49CD76A2CBDA0CF00C238DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4858DCF2C921AD10053F492 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A49CD7642CBDA0CF00C238DB;
+			remoteInfo = Keyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4CB42922CA1409700639CCE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A49CD76C2CBDA0CF00C238DB /* Keyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A4858DD72C921AD10053F492 /* Kaomoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaomoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4858DDA2C921AD10053F492 /* KaomojiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaomojiApp.swift; sourceTree = "<group>"; };
-		A4858DDC2C921AD10053F492 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A4858DDC2C921AD10053F492 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 		A4858DDE2C921AD30053F492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4858DE12C921AD30053F492 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4858DE72C921AD40053F492 /* KaomojiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaomojiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +76,14 @@
 		A4858DF12C921AD40053F492 /* KaomojiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaomojiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4858DF52C921AD40053F492 /* KaomojiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaomojiUITests.swift; sourceTree = "<group>"; };
 		A4858DF72C921AD40053F492 /* KaomojiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaomojiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4858E072C925AF20053F492 /* Kaomoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kaomoji.swift; sourceTree = "<group>"; };
+		A4858E0B2C925CD30053F492 /* JsonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonService.swift; sourceTree = "<group>"; };
+		A4858E112C926B680053F492 /* EmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewModel.swift; sourceTree = "<group>"; };
+		A49CD7652CBDA0CF00C238DB /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A49CD7672CBDA0CF00C238DB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		A49CD7692CBDA0CF00C238DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4CB42752C97D4C900639CCE /* Kaomoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Kaomoji.json; path = ../../Scraper/Kaomoji.json; sourceTree = "<group>"; };
+		A4CB42982CA2406200639CCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +108,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A49CD7622CBDA0CF00C238DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +124,7 @@
 				A4858DD92C921AD10053F492 /* Kaomoji */,
 				A4858DEA2C921AD40053F492 /* KaomojiTests */,
 				A4858DF42C921AD40053F492 /* KaomojiUITests */,
+				A49CD7662CBDA0CF00C238DB /* Keyboard */,
 				A4858DD82C921AD10053F492 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +135,7 @@
 				A4858DD72C921AD10053F492 /* Kaomoji.app */,
 				A4858DE72C921AD40053F492 /* KaomojiTests.xctest */,
 				A4858DF12C921AD40053F492 /* KaomojiUITests.xctest */,
+				A49CD7652CBDA0CF00C238DB /* Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,8 +144,12 @@
 			isa = PBXGroup;
 			children = (
 				A4858DDA2C921AD10053F492 /* KaomojiApp.swift */,
-				A4858DDC2C921AD10053F492 /* ContentView.swift */,
+				A4858E062C925ADA0053F492 /* Model */,
+				A4858E0A2C925CBA0053F492 /* Service */,
+				A4858E102C926B540053F492 /* ViewModel */,
+				A4858E092C925C9A0053F492 /* View */,
 				A4858DDE2C921AD30053F492 /* Assets.xcassets */,
+				A4CB42752C97D4C900639CCE /* Kaomoji.json */,
 				A4858DE02C921AD30053F492 /* Preview Content */,
 			);
 			path = Kaomoji;
@@ -127,6 +180,48 @@
 			path = KaomojiUITests;
 			sourceTree = "<group>";
 		};
+		A4858E062C925ADA0053F492 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4858E072C925AF20053F492 /* Kaomoji.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4858E092C925C9A0053F492 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4858DDC2C921AD10053F492 /* EmojiView.swift */,
+				A4CB42982CA2406200639CCE /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4858E0A2C925CBA0053F492 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A4858E0B2C925CD30053F492 /* JsonService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A4858E102C926B540053F492 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A4858E112C926B680053F492 /* EmojiViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A49CD7662CBDA0CF00C238DB /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A49CD7672CBDA0CF00C238DB /* KeyboardViewController.swift */,
+				A49CD7692CBDA0CF00C238DB /* Info.plist */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +232,13 @@
 				A4858DD32C921AD10053F492 /* Sources */,
 				A4858DD42C921AD10053F492 /* Frameworks */,
 				A4858DD52C921AD10053F492 /* Resources */,
+				A4858E0D2C925FF30053F492 /* ShellScript */,
+				A4CB42922CA1409700639CCE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A49CD76B2CBDA0CF00C238DB /* PBXTargetDependency */,
 			);
 			name = Kaomoji;
 			productName = Kaomoji;
@@ -183,6 +281,23 @@
 			productReference = A4858DF12C921AD40053F492 /* KaomojiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A49CD7642CBDA0CF00C238DB /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A49CD76F2CBDA0CF00C238DB /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				A49CD7612CBDA0CF00C238DB /* Sources */,
+				A49CD7622CBDA0CF00C238DB /* Frameworks */,
+				A49CD7632CBDA0CF00C238DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard;
+			productName = Keyboard;
+			productReference = A49CD7652CBDA0CF00C238DB /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +319,9 @@
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = A4858DD62C921AD10053F492;
 					};
+					A49CD7642CBDA0CF00C238DB = {
+						CreatedOnToolsVersion = 15.2;
+					};
 				};
 			};
 			buildConfigurationList = A4858DD22C921AD10053F492 /* Build configuration list for PBXProject "Kaomoji" */;
@@ -222,6 +340,7 @@
 				A4858DD62C921AD10053F492 /* Kaomoji */,
 				A4858DE62C921AD40053F492 /* KaomojiTests */,
 				A4858DF02C921AD40053F492 /* KaomojiUITests */,
+				A49CD7642CBDA0CF00C238DB /* Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +352,7 @@
 			files = (
 				A4858DE22C921AD30053F492 /* Preview Assets.xcassets in Resources */,
 				A4858DDF2C921AD30053F492 /* Assets.xcassets in Resources */,
+				A4CB42762C97D4C900639CCE /* Kaomoji.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,14 +370,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A49CD7632CBDA0CF00C238DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4858E0D2C925FF30053F492 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A4858DD32C921AD10053F492 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4858DDD2C921AD10053F492 /* ContentView.swift in Sources */,
+				A4858E0C2C925CD30053F492 /* JsonService.swift in Sources */,
+				A4858DDD2C921AD10053F492 /* EmojiView.swift in Sources */,
+				A4CB42992CA2406200639CCE /* ContentView.swift in Sources */,
+				A4858E122C926B680053F492 /* EmojiViewModel.swift in Sources */,
+				A4858E082C925AF20053F492 /* Kaomoji.swift in Sources */,
 				A4858DDB2C921AD10053F492 /* KaomojiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +432,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A49CD7612CBDA0CF00C238DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49CD7732CC03AF900C238DB /* Kaomoji.swift in Sources */,
+				A49CD7712CC03AED00C238DB /* EmojiViewModel.swift in Sources */,
+				A49CD7682CBDA0CF00C238DB /* KeyboardViewController.swift in Sources */,
+				A49CD7702CC03AE400C238DB /* EmojiView.swift in Sources */,
+				A49CD7722CC03AF300C238DB /* JsonService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +456,11 @@
 			isa = PBXTargetDependency;
 			target = A4858DD62C921AD10053F492 /* Kaomoji */;
 			targetProxy = A4858DF22C921AD40053F492 /* PBXContainerItemProxy */;
+		};
+		A49CD76B2CBDA0CF00C238DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A49CD7642CBDA0CF00C238DB /* Keyboard */;
+			targetProxy = A49CD76A2CBDA0CF00C238DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -417,6 +587,7 @@
 		A4858DFC2C921AD40053F492 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -424,6 +595,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Kaomoji/Preview Content\"";
 				DEVELOPMENT_TEAM = 453RA23964;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -446,6 +618,7 @@
 		A4858DFD2C921AD40053F492 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +626,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Kaomoji/Preview Content\"";
 				DEVELOPMENT_TEAM = 453RA23964;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -548,6 +722,56 @@
 			};
 			name = Release;
 		};
+		A49CD76D2CBDA0CF00C238DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 453RA23964;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Keyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jonathan.Kaomoji.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A49CD76E2CBDA0CF00C238DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 453RA23964;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Keyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jonathan.Kaomoji.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +807,15 @@
 			buildConfigurations = (
 				A4858E022C921AD40053F492 /* Debug */,
 				A4858E032C921AD40053F492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A49CD76F2CBDA0CF00C238DB /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49CD76D2CBDA0CF00C238DB /* Debug */,
+				A49CD76E2CBDA0CF00C238DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct Kaomoji: Hashable, Codable {
+    var id: Int?
+    var key: String
+    var name: String
+    var entry: String
+    var keywords: [String]
+    var category: String?
+}
+
+struct EmojiList: Codable {
+    var kaomojiList: [String: Kaomoji]
+}
