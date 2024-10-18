@@ -24,6 +24,13 @@ class EmojiViewModel: ObservableObject {
                 print( "error")
             }
         }
+    }
 
+    var emojisByCategory: [String: [Kaomoji]] {
+        Dictionary(grouping: emojiList, by: { $0.category ?? "Misc" })
+    }
+
+    var categories: [String] {
+        Array(emojisByCategory.keys).sorted() // Sort categories alphabetically
     }
 }

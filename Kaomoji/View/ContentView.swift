@@ -8,17 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    // State to store the selected emoji
+    @State private var selectedEmoji: String = ""
+
     var body: some View {
         ZStack(alignment: .bottom) {
-            GeometryReader {_ in
-                Text("")
+            GeometryReader { _ in
+                VStack {
+                    // Display the selected emoji
+                    if !selectedEmoji.isEmpty {
+                        Text("Selected Emoji: \(selectedEmoji)")
+                            .font(.largeTitle)
+                            .padding()
+                    } else {
+                        Text("Select an emoji or kaomoji!")
+                            .font(.headline)
+                            .padding()
+                    }
+                }
             }
-            EmojiView()
+
+            // EmojiView with the onEmojiSelected closure
+            EmojiView { emoji in
+                // Update the selected emoji when tapped
+                selectedEmoji = emoji
+                print("Emoji selected: \(emoji)")
+            }
+            .frame(height: 300) // Adjust the height as needed
         }
         .background(Color("Color").edgesIgnoringSafeArea(.all))
     }
-}
-
-#Preview {
-    ContentView()
 }

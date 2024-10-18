@@ -8,8 +8,6 @@
 import Foundation
 
 struct Kaomoji: Hashable, Codable {
-    var id: Int?
-    var key: String
     var name: String
     var entry: String
     var keywords: [String]

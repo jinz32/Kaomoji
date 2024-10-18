@@ -19,16 +19,11 @@ class JsonService {
         do {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
-            // Decode the JSON as a dictionary where the keys are String and values are Kaomoji
-            var emojiList = try decoder.decode([String: Kaomoji].self, from: data)
-            print("Original data:", emojiList)
-            // Increment and update the ID for each Kaomoji
-            var index = 1
-            for key in emojiList.keys {
-                emojiList[key]?.id = index  // Set the unique identifier
-                index += 1
-            }
-            print("Data with IDs:", emojiList)
+
+            // Decode the JSON as a dictionary where the keys are String and values are Kaomoji objects
+            let emojiList = try decoder.decode([String: Kaomoji].self, from: data)
+
+            print("Decoded data:", emojiList)
             return emojiList
         } catch {
             print("Error reading or decoding data:", error.localizedDescription)

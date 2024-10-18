@@ -7,125 +7,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6E609CBF-325E-4F3B-95FD-FB8DA79B3EE1"
-            shouldBeEnabled = "Yes"
+            uuid = "9EAFFFFC-93FC-479A-8F81-CEA82E1A0B14"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Kaomoji/ViewModel/EmojiViewModel.swift"
+            filePath = "Keyboard/KeyboardViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "fetchEmojis()"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "6E609CBF-325E-4F3B-95FD-FB8DA79B3EE1 - 967063be1bd1d255"
+                  uuid = "9EAFFFFC-93FC-479A-8F81-CEA82E1A0B14 - 70e6941fed7fad1c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in Kaomoji.EmojiViewModel.fetchEmojis() -&gt; ()"
-                  moduleName = "Kaomoji"
+                  symbolName = "Keyboard.KeyboardViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Keyboard"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonathanzheng/Desktop/Kaomoji/Kaomoji/ViewModel/EmojiViewModel.swift"
+                  urlString = "file:///Users/jonathanzheng/Desktop/Kaomoji/Keyboard/KeyboardViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "68">
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "3376">
                </Location>
                <Location
-                  uuid = "6E609CBF-325E-4F3B-95FD-FB8DA79B3EE1 - 52dd94c909493174"
+                  uuid = "9EAFFFFC-93FC-479A-8F81-CEA82E1A0B14 - 70e6941fed7fad1c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in Kaomoji.EmojiViewModel.fetchEmojis() -&gt; ()"
-                  moduleName = "Kaomoji"
+                  symbolName = "Keyboard.KeyboardViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Keyboard"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonathanzheng/Desktop/Kaomoji/Kaomoji/ViewModel/EmojiViewModel.swift"
+                  urlString = "file:///Users/jonathanzheng/Desktop/Kaomoji/Keyboard/KeyboardViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "6E609CBF-325E-4F3B-95FD-FB8DA79B3EE1 - 47e21a4544035a69"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in Kaomoji.EmojiViewModel.fetchEmojis() -&gt; ()"
-                  moduleName = "Kaomoji"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonathanzheng/Desktop/Kaomoji/Kaomoji/ViewModel/EmojiViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  uuid = "6E609CBF-325E-4F3B-95FD-FB8DA79B3EE1 - 47e21a4544035a69"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in Kaomoji.EmojiViewModel.fetchEmojis() -&gt; ()"
-                  moduleName = "Kaomoji"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonathanzheng/Desktop/Kaomoji/Kaomoji/ViewModel/EmojiViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "220">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "247C650A-78B5-4039-AE1A-DFDE0FE4B926"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Kaomoji/Service/JsonService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "parseData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "247C650A-78B5-4039-AE1A-DFDE0FE4B926 - f97fefc18d43ede4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for Kaomoji.JsonService.parseData() async -&gt; Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Kaomoji.Kaomoji&gt;&gt;"
-                  moduleName = "Kaomoji"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonathanzheng/Desktop/Kaomoji/Kaomoji/Service/JsonService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "2696">
-               </Location>
-               <Location
-                  uuid = "247C650A-78B5-4039-AE1A-DFDE0FE4B926 - f97fefc18d43ede4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for Kaomoji.JsonService.parseData() async -&gt; Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Kaomoji.Kaomoji&gt;&gt;"
-                  moduleName = "Kaomoji"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jonathanzheng/Desktop/Kaomoji/Kaomoji/Service/JsonService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "2664">
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "3256">
                </Location>
             </Locations>
          </BreakpointContent>

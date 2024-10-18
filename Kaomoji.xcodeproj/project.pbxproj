@@ -23,6 +23,7 @@
 		A49CD7712CC03AED00C238DB /* EmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858E112C926B680053F492 /* EmojiViewModel.swift */; };
 		A49CD7722CC03AF300C238DB /* JsonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858E0B2C925CD30053F492 /* JsonService.swift */; };
 		A49CD7732CC03AF900C238DB /* Kaomoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858E072C925AF20053F492 /* Kaomoji.swift */; };
+		A49CD7742CC045F100C238DB /* Kaomoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A4CB42752C97D4C900639CCE /* Kaomoji.json */; };
 		A4CB42762C97D4C900639CCE /* Kaomoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A4CB42752C97D4C900639CCE /* Kaomoji.json */; };
 		A4CB42992CA2406200639CCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB42982CA2406200639CCE /* ContentView.swift */; };
 /* End PBXBuildFile section */
@@ -374,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49CD7742CC045F100C238DB /* Kaomoji.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
