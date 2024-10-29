@@ -4,20 +4,13 @@
 //
 //  Created by Jonathan Zheng on 9/11/24.
 //
+
 import SwiftUI
-
-/**
- 
- 1. first display all
- 2. create way to determine last index seen
- 
- */
-
 struct EmojiView: View {
     @StateObject private var viewModel = EmojiViewModel()
     @State private var selectedCategory: String = "All"
     @Environment(\.colorScheme) var colorScheme
-    var onEmojiSelected: (String) -> Void
+    var onEmojiSelected: (String) -> Void  // Callback for when a kaomoji is selected
 
     let columns = [
         GridItem(.flexible()),
@@ -26,59 +19,48 @@ struct EmojiView: View {
     ]
 
     var body: some View {
-        NavigationView {
-            VStack(spacing: 0) {
-                if viewModel.emojiList.isEmpty {
-                    ProgressView("Loading emojis...")
-                        .onAppear {
-                            viewModel.fetchEmojis()
-                        }
-                } else {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        LazyHStack(spacing: 20) {
-                            ForEach(viewModel.categories, id: \.self) { category in
-                                Button(action: {
-                                    selectedCategory = category
-                                }) {
-                                    Text(category)
-                                        .font(.subheadline)
-                                        .foregroundColor(selectedCategory == category ? .blue : .primary)
-                                        .background(selectedCategory == category ? Color.blue.opacity(0.2) : Color.clear)
-                                        .cornerRadius(10)
-
-                                }
-                            }
-
-                        }
-                        .padding(.horizontal) // Horizontal padding for content spacing
-                    }
-                    .frame(height: 40)
-                    // Display the Kaomojis based on the selected category
-                    ScrollView(.vertical, showsIndicators: false) {
-                        LazyVGrid(columns: columns, spacing: 20) {
-                            ForEach(viewModel.emojisByCategory[selectedCategory] ?? [], id: \.self) { emoji in
-                                Button(action: {
-                                    print("Kaomoji tapped: \(emoji.entry)")
-                                    onEmojiSelected(emoji.entry)
-                                }) {
-                                    Text(emoji.entry)
-                                        .font(.largeTitle)
-                                        .minimumScaleFactor(0.1)
-                                        .lineLimit(1)
-                                        .padding(.horizontal, 10)
-                                        .foregroundColor(dynamicTextColor(false))
-                                }
-                            }
+        VStack {
+            // Horizontal scroll for category selection
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHStack {
+                    ForEach(viewModel.categories, id: \.self) { category in
+                        Button(action: {
+                            selectedCategory = category
+                        }) {
+                            Text(category)
+                                .foregroundColor(selectedCategory == category ? .blue : .primary)
+                                .padding(5)
+                                .background(selectedCategory == category ? Color.blue.opacity(0.2) : Color.clear)
+                                .cornerRadius(8)
                         }
                     }
-                    .frame(width: UIScreen.main.bounds.width)
+                }
+                .padding()
+            }
+            // Grid of kaomojis for the selected category
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(viewModel.emojisByCategory[selectedCategory] ?? [], id: \.self) { kaomoji in
+                        Button(action: {
+                            onEmojiSelected(kaomoji.entry)  // Trigger callback
+                            viewModel.updateRecentlyUsed(kaomoji)  // Update recents
+                        }) {
+                            Text(kaomoji.entry)
+                                .font(.largeTitle)
+                                .minimumScaleFactor(0.1)
+                                .foregroundColor(dynamicTextColor(false))
+                                .lineLimit(1)
+                                .padding(.horizontal, 10)
+                        }
+                    }
                 }
             }
+            .frame(height: 250)
         }
-
+        .onAppear {
+            viewModel.loadRecentlyUsedEmojis()  // Reload recents on appear
+        }
     }
-
-    // Helper function to dynamically set text color (black or white)
     private func dynamicTextColor(_ isSelected: Bool) -> Color {
         if colorScheme == .dark {
             return isSelected ? .white : .gray

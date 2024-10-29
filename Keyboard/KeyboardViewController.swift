@@ -32,7 +32,7 @@ class KeyboardViewController: UIInputViewController {
         view.backgroundColor = UIColor.blue
         hostingController.didMove(toParent: self)
     }
-    
+
     private func insertEmoji(_ emoji: String) {
            textDocumentProxy.insertText(emoji)
        }
